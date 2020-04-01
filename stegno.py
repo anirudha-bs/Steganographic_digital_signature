@@ -68,6 +68,7 @@ def decode():
 
     sign = decoded_data[:-5]
     sign = re.split('>>>>>', sign)
+
     signature = sign[0][2:-1]
     pub_key = sign[1][2:-1]
     public_key = pub_key.replace('\\n', '\n')
